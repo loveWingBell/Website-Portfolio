@@ -1,2 +1,83 @@
 /* CPSC 581 Portfolio - Elda Britu - 30158734 - B01*/
 
+/* Lockscreen overlay */
+#lockscreen {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+/* Wrapper handles hover effects */
+#lock-btn-wrap {
+  position: relative;
+  display: inline-flex;
+  padding: 12px;
+}
+#lock-btn-wrap:hover {
+  animation: shake 0.35s infinite;
+}
+#lock-btn-wrap:hover #lock-btn {
+  filter: brightness(0.65);
+}
+#lock-btn-wrap:hover::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 8px;
+  animation: edgeGlow 0.9s linear infinite;
+  pointer-events: none;
+}
+/* Suppress hover while unlocking */
+#lock-btn-wrap.unlocking,
+#lock-btn-wrap.unlocking:hover {
+  animation: none !important;
+}
+#lock-btn-wrap.unlocking::after,
+#lock-btn-wrap.unlocking:hover::after {
+  display: none;
+}
+#lock-btn-wrap.unlocking #lock-btn,
+#lock-btn-wrap.unlocking:hover #lock-btn {
+  filter: none;
+}
+
+#lock-btn {
+  width: min(420px, 90vw);
+  user-select: none;
+  display: block;
+  transition: filter 0.15s;
+}
+#lock-btn.bounce {
+  animation: bounce 0.52s cubic-bezier(.36,.07,.19,.97) forwards;
+}
+
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(-5px); }
+  40%  { transform: translateX( 5px); }
+  60%  { transform: translateX(-3px); }
+  80%  { transform: translateX( 3px); }
+  100% { transform: translateX(0); }
+}
+@keyframes edgeGlow {
+  0%   { box-shadow: 0 0 18px 10px #FFB3C6; }
+  14%  { box-shadow: 0 0 18px 10px #FFD6A5; }
+  28%  { box-shadow: 0 0 18px 10px #FDFFB6; }
+  42%  { box-shadow: 0 0 18px 10px #CAFFBF; }
+  57%  { box-shadow: 0 0 18px 10px #9BF6FF; }
+  71%  { box-shadow: 0 0 18px 10px #BDB2FF; }
+  85%  { box-shadow: 0 0 18px 10px #FFC6FF; }
+  100% { box-shadow: 0 0 18px 10px #FFB3C6; }
+}
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  20%  { transform: scale(0.88) rotate(-2deg); }
+  50%  { transform: scale(1.14) rotate( 1deg); }
+  75%  { transform: scale(0.95) rotate(-1deg); }
+  100% { transform: scale(1)    rotate( 0deg); }
+}
