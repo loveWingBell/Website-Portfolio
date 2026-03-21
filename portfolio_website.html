@@ -1,12 +1,67 @@
 <!-- CPSC 581 Portfolio - Elda Britu - 30158734 - B01 -->
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Untitled</title>
+  <title>Elda Britu — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Triangle Navigation Header -->
+  <header class="tri-nav">
+
+    <!-- Mobile -->
+    <div class="tri-nav__mobile-logo">
+      <span class="logo-initials">EB</span>
+      <span class="logo-name">Elda<br>Britu</span>
+    </div>
+
+    <!-- Mobile -->
+    <div class="tri-nav__mobile-bar">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle light/dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop: left triangle -->
+    <div class="tri-nav__left">
+      <div class="tri-nav__logo">
+        <span class="logo-initials">EB</span>
+        <span class="logo-name">Elda<br>Britu</span>
+      </div>
+    </div>
+    <div class="tri-nav__right">
+      <nav class="tri-nav__links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle light/dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
 
   <!--First-visit lockscreen-->
   <div id="lockscreen">
@@ -15,10 +70,136 @@
     </div>
   </div>
 
-  <!--Existing site content-->
-  <p>i didn't get started :&lpar;</p>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__slash"></div>
+    <div class="hero__slash-accent"></div>
+    <div class="hero__inner">
+      <div class="hero__left">
+        <p class="hero__eyebrow">
+          <span class="hero__eyebrow-line"></span>
+          Lorem ipsum dolor sit amet
+        </p>
+        <h1 class="hero__title">
+          <span class="hero__title-row row1">ELDA</span>
+          <span class="hero__title-row row2"><span class="hero__title-outline">BRI</span>TU</span>
+        </h1>
+        <p class="hero__sub">Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em> — sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+        <div class="hero__actions">
+          <a href="#work" class="btn-fill">Lorem ipsum</a>
+          <a href="#contact" class="btn-ghost">Dolor sit amet</a>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="orb-ring orb-ring--outer"></div>
+        <div class="orb-ring orb-ring--mid"></div>
+        <div class="orb">
+          <div class="orb__q orb__q--tl"></div>
+          <div class="orb__q orb__q--tr"></div>
+          <div class="orb__q orb__q--bl"></div>
+          <div class="orb__q orb__q--br"></div>
+          <div class="orb__core">
+            <span class="orb__core-text">Lorem<br>&amp;<br>Ipsum</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="data-strip">
+      <div class="data-strip__inner">
+        <span class="data-item"><span class="data-label">Lorem</span><span class="data-sep">—</span><span class="data-val">Ipsum</span></span>
+        <span class="data-item"><span class="data-label">Dolor</span><span class="data-sep">—</span><span class="data-val">Sit Amet</span></span>
+        <span class="data-item"><span class="data-label">Consectetur</span><span class="data-sep">—</span><span class="data-val">Adipiscing</span></span>
+        <span class="data-item"><span class="data-label">Eiusmod</span><span class="data-sep">—</span><span class="data-val">Tempor</span></span>
+        <span class="data-item"><span class="data-label">Labore</span><span class="data-sep">—</span><span class="data-val">Dolore · Magna</span></span>
+        <span class="data-item"><span class="data-label">Lorem</span><span class="data-sep">—</span><span class="data-val">Ipsum</span></span>
+        <span class="data-item"><span class="data-label">Dolor</span><span class="data-sep">—</span><span class="data-val">Sit Amet</span></span>
+        <span class="data-item"><span class="data-label">Consectetur</span><span class="data-sep">—</span><span class="data-val">Adipiscing</span></span>
+        <span class="data-item"><span class="data-label">Eiusmod</span><span class="data-sep">—</span><span class="data-val">Tempor</span></span>
+        <span class="data-item"><span class="data-label">Labore</span><span class="data-sep">—</span><span class="data-val">Dolore · Magna</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK CARDS -->
+  <section class="work" id="work">
+    <div class="work__header">
+      <h2 class="work__title">Selected<br><span class="work__title-dim">Work</span></h2>
+      <span class="eyebrow-label">03 lorem ipsum</span>
+    </div>
+    <div class="work__cards">
+
+      <article class="wcard">
+        <div class="wcard__bar wcard__bar--1"></div>
+        <span class="wcard__num">01</span>
+        <a href="#" class="wcard__arrow">↗</a>
+        <p class="wcard__cat">Lorem ipsum · Dolor sit</p>
+        <h3 class="wcard__title">Lorem Ipsum<br>Dolor Amet</h3>
+        <p class="wcard__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="wcard__tags">
+          <span class="tag">Lorem</span>
+          <span class="tag">Ipsum</span>
+          <span class="tag">Dolor</span>
+        </div>
+      </article>
+
+      <article class="wcard">
+        <div class="wcard__bar wcard__bar--2"></div>
+        <span class="wcard__num">02</span>
+        <a href="#" class="wcard__arrow">↗</a>
+        <p class="wcard__cat">Consectetur · Adipiscing</p>
+        <h3 class="wcard__title">Consectetur<br>Adipiscing</h3>
+        <p class="wcard__desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="wcard__tags">
+          <span class="tag">Sit</span>
+          <span class="tag">Amet</span>
+          <span class="tag">Elit</span>
+        </div>
+      </article>
+
+      <article class="wcard">
+        <div class="wcard__bar wcard__bar--3"></div>
+        <span class="wcard__num">03</span>
+        <a href="#" class="wcard__arrow">↗</a>
+        <p class="wcard__cat">Eiusmod · Tempor</p>
+        <h3 class="wcard__title">Eiusmod<br>Tempor</h3>
+        <p class="wcard__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.</p>
+        <div class="wcard__tags">
+          <span class="tag">Eiusmod</span>
+          <span class="tag">Tempor</span>
+          <span class="tag">Labore</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
 
   <script src="lockscreen.js"></script>
   <script src="app.js"></script>
+  <script>
+    (function () {
+      var nav       = document.querySelector('.tri-nav');
+      var lastY     = window.scrollY;
+      var threshold = 12;
+
+      // Wait for entry animation (0.12s delay + 0.7s duration + buffer)
+      setTimeout(function () { nav.classList.add('nav--ready'); }, 900);
+
+      window.addEventListener('scroll', function () {
+        var y     = window.scrollY;
+        var delta = y - lastY;
+
+        if (Math.abs(delta) < threshold) return;
+
+        if (delta > 0 && y > 80) {
+          nav.classList.add('nav--hidden');
+        } else {
+          nav.classList.remove('nav--hidden');
+        }
+
+        lastY = y;
+      }, { passive: true });
+    })();
+  </script>
 </body>
 </html>
