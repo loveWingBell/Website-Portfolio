@@ -17,6 +17,7 @@ themeToggles.forEach(btn => {
 });
 
 // Scroll hide / show
+(function () {
   const nav       = document.querySelector('.tri-nav');
   const mobileBar = document.querySelector('.tri-nav__mobile-bar');
   const THRESHOLD = 80;
