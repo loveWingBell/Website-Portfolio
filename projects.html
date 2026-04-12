@@ -1,0 +1,254 @@
+<!-- CPSC 581 Portfolio - Elda Britu - 30158734 - B01 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects — Elda Britu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Projects page extras ── */
+    .projects-hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 38vh;
+      display: flex;
+      flex-direction: column;
+      padding-top: var(--nav-height);
+    }
+    .projects-hero__slash {
+      position: absolute; inset: 0; pointer-events: none;
+      background: var(--nav-layer-2); opacity: 0.22;
+      clip-path: polygon(0 0,56% 0,100% 100%,0 100%);
+      transition: background 0.4s;
+    }
+    .projects-hero__slash-accent {
+      position: absolute; inset: 0; pointer-events: none;
+      background: var(--nav-layer-1); opacity: 0.12;
+      clip-path: polygon(54% 0,60% 0,100% 100%,95% 100%);
+      transition: background 0.4s;
+    }
+    .projects-hero__center {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .projects-hero__label {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: clamp(14px, 2vw, 22px);
+      color: var(--text-mid);
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+    }
+    .projects-hero__title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(52px, 9vw, 120px);
+      line-height: 0.9;
+      letter-spacing: 0.03em;
+      color: var(--text);
+      margin: 0;
+    }
+    .projects-hero__dot { color: var(--accent); }
+
+    /* Projects grid section */
+    .projects-section {
+      padding: 72px 64px 120px;
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+    }
+    .projects-section__header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .projects-section__count {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* Empty state */
+    .projects-empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      min-height: 320px;
+      border: 1.5px dashed var(--border);
+      background: var(--surface);
+      text-align: center;
+      padding: 60px;
+    }
+    .projects-empty__icon {
+      width: 52px; height: 52px;
+      stroke: var(--text-muted);
+    }
+    .projects-empty__title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+    .projects-empty__sub {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 320px;
+    }
+    .projects-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-top: 4px;
+      transition: color 0.2s;
+    }
+    .projects-back:hover { color: var(--accent); }
+
+    @media (max-width: 767px) {
+      .projects-hero { padding-top: 0; min-height: 30vh; }
+      .projects-section { padding: 48px 24px 80px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Triangle Navigation Header -->
+  <header class="tri-nav">
+
+    <!-- Mobile -->
+    <div class="tri-nav__mobile-logo">
+      <span class="logo-initials">EB</span>
+      <span class="logo-name">Elda<br>Britu</span>
+    </div>
+
+    <!-- Mobile bottom bar -->
+    <div class="tri-nav__mobile-bar">
+      <nav>
+        <a href="portfolio_website.html#about">About</a>
+        <a href="portfolio_website.html#work">Work</a>
+        <a href="projects.html">Projects</a>
+        <a href="portfolio_website.html#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle light/dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop -->
+    <div class="tri-nav__left">
+      <div class="tri-nav__logo">
+        <span class="logo-initials">EB</span>
+        <span class="logo-name">Elda<br>Britu</span>
+      </div>
+    </div>
+    <div class="tri-nav__right">
+      <nav class="tri-nav__links">
+        <a href="portfolio_website.html#about">About</a>
+        <a href="portfolio_website.html#work">Work</a>
+        <a href="projects.html">Projects</a>
+        <a href="portfolio_website.html#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle light/dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="projects-hero">
+    <div class="projects-hero__slash"></div>
+    <div class="projects-hero__slash-accent"></div>
+    <div class="projects-hero__center">
+      <p class="projects-hero__label">all of my</p>
+      <h1 class="projects-hero__title">Projects<span class="projects-hero__dot">.</span></h1>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="projects-section">
+    <div class="projects-section__header">
+      <span class="eyebrow-label">Work &amp; Projects</span>
+      <span class="projects-section__count">0 projects</span>
+    </div>
+
+    <!-- Empty state — remove this block and add project cards here -->
+    <div class="projects-empty">
+      <svg class="projects-empty__icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="3" width="20" height="14" rx="2"/>
+        <path d="M8 21h8M12 17v4"/>
+        <path d="M9 9h6M9 12h4"/>
+      </svg>
+      <p class="projects-empty__title">Projects coming soon</p>
+      <p class="projects-empty__sub">I'll add onto this later.</p>
+      <a href="portfolio_website.html" class="projects-back">← Back to Portfolio</a>
+    </div>
+    <!-- End empty state -->
+  </section>
+
+  <script>
+    // Restore theme preference
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light');
+    }
+    // Theme toggle
+    document.querySelectorAll('.theme-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.body.classList.toggle('light');
+        localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+      });
+    });
+    // Scroll-hide nav (mobile bar)
+    (function () {
+      const nav = document.querySelector('.tri-nav');
+      const mobileBar = document.querySelector('.tri-nav__mobile-bar');
+      const THRESHOLD = 80, MOBILE_BP = 767;
+      let lastY = window.scrollY, pendingY = lastY, ticking = false;
+      function update() {
+        const y = pendingY, isMobile = window.innerWidth <= MOBILE_BP, delta = y - lastY;
+        if (delta > 0 && y > THRESHOLD) {
+          if (isMobile) mobileBar.classList.add('bar--hidden');
+          else nav.classList.add('nav--hidden');
+        } else if (delta < 0 || y <= THRESHOLD) {
+          nav.classList.remove('nav--hidden');
+          mobileBar.classList.remove('bar--hidden');
+        }
+        lastY = y; ticking = false;
+      }
+      window.addEventListener('scroll', () => {
+        pendingY = window.scrollY;
+        if (!ticking) { ticking = true; requestAnimationFrame(update); }
+      }, { passive: true });
+    })();
+  </script>
+</body>
+</html>

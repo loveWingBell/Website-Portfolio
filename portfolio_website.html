@@ -23,7 +23,7 @@
       <nav>
         <a href="#about">About</a>
         <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
+        <a href="projects.html">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="theme-toggle" aria-label="Toggle light/dark mode">
@@ -48,7 +48,7 @@
       <nav class="tri-nav__links">
         <a href="#about">About</a>
         <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
+        <a href="projects.html">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="theme-toggle" aria-label="Toggle light/dark mode">
@@ -111,12 +111,16 @@
             <span class="about__descriptor-label">Graduated from</span>
             <span class="about__descriptor-val">University of Calgary</span>
           </div>
-          <div class="about__descriptor">
-            <span class="about__descriptor-label">Interested in</span>
-            <span class="about__descriptor-val">UX/UI Design &nbsp;·&nbsp; Cybersecurity</span>
-          </div>
         </div>
-        <!-- Skill tags removed -->
+        <a href="resume.pdf" class="resume-btn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="12" y1="18" x2="12" y2="12"/>
+            <polyline points="9 15 12 18 15 15"/>
+          </svg>
+          View / Download Resume
+        </a>
       </div>
     </div>
   </section>
@@ -192,11 +196,109 @@
           </g>
         </svg>
       </div>
+    </div>
+    <div class="view-all-wrap">
+        <a href="projects.html" class="btn-ghost view-all-btn">View all Projects ↗</a>
+    </div>
+  </section>
 
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__slash"></div>
+    <div class="contact__slash-accent"></div>
+    <div class="contact__inner">
+
+      <div class="contact__header">
+        <span class="eyebrow-label">get in touch</span>
+        <h2 class="contact__title">Let's<br><span class="contact__title-dim">Connect</span></h2>
+        <p class="contact__sub">Have a project in mind, a question, or just want to say hello? Send me a message and I'll get back to you.</p>
+      </div>
+
+      <div class="contact__body">
+        <!-- Email form -->
+        <form class="contact__form" id="contactForm">
+          <div class="cform__row">
+            <div class="cform__field">
+              <label class="cform__label" for="cf-name">Name</label>
+              <input class="cform__input" id="cf-name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="cform__field">
+              <label class="cform__label" for="cf-email">Email</label>
+              <input class="cform__input" id="cf-email" name="email" type="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="cform__field">
+            <label class="cform__label" for="cf-subject">Subject</label>
+            <input class="cform__input" id="cf-subject" name="subject" type="text" placeholder="What's this about?" />
+          </div>
+          <div class="cform__field">
+            <label class="cform__label" for="cf-message">Message</label>
+            <textarea class="cform__input cform__textarea" id="cf-message" name="message" placeholder="Tell me more…" required></textarea>
+          </div>
+          <button type="submit" class="btn-fill cform__submit">Send Message</button>
+          <p class="cform__note" id="cformNote"></p>
+        </form>
+
+        <!-- Social links -->
+        <aside class="contact__socials">
+          <p class="contact__socials-label">Find me on</p>
+          <div class="social-links">
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/elda-britu-40925b286/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <span class="social-link__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </span>
+              <span class="social-link__label">LinkedIn</span>
+              <span class="social-link__handle">@elda-britu-40925b286</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/loveWingBell" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <span class="social-link__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+              </span>
+              <span class="social-link__label">GitHub</span>
+              <span class="social-link__handle">@loveWingBell</span>
+            </a>
+
+            <!-- Freelancer -->
+            <a href="https://www.freelancer.com/u/BrituE" class="social-link" target="_blank" rel="noopener" aria-label="Freelancer">
+              <span class="social-link__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M24 0l-4.765 13.3h-5.236L24 0zM8.44 13.3L0 0h14.235L8.44 13.3zm-.808 1.42L6.75 17.5H5.25l.882-2.78H8.44zm7.236 0H17.25l-.882 2.78h-1.5l-.882-2.78zM8.44 24l1.5-4.72h4.12L15.56 24H8.44z"/>
+                </svg>
+              </span>
+              <span class="social-link__label">Freelancer</span>
+              <span class="social-link__handle">@BrituE</span>
+            </a>
+
+          </div>
+        </aside>
+      </div>
     </div>
   </section>
 
   <script src="lockscreen.js"></script>
   <script src="app.js"></script>
+  <script>
+    // Contact form — mailto fallback
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name    = document.getElementById('cf-name').value.trim();
+      const email   = document.getElementById('cf-email').value.trim();
+      const subject = document.getElementById('cf-subject').value.trim() || 'Portfolio Contact';
+      const message = document.getElementById('cf-message').value.trim();
+      const body    = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+      // ← Replace with your email address below
+      const to      = 'YOUR-EMAIL@example.com';
+      window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      document.getElementById('cformNote').textContent = 'Your email client should have opened. If not, email me directly at ' + to;
+    });
+  </script>
 </body>
 </html>
