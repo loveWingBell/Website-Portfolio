@@ -564,7 +564,7 @@ body.light .hero__slash-accent { opacity: 0.2; }
 .work__header {
   position: relative; z-index: 1;
   display: flex; align-items: flex-end; justify-content: space-between;
-  margin-bottom: 52px; padding-bottom: 24px;
+  margin-bottom: 28px; padding-bottom: 16px;
   border-bottom: 1px solid var(--border-soft);
 }
 
