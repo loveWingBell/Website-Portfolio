@@ -434,7 +434,7 @@ body.light .hero__slash-accent { opacity: 0.2; }
 .work { padding: 100px 64px; border-top: 1px solid var(--border); }
 .work__header {
   display: flex; align-items: flex-end; justify-content: space-between;
-  margin-bottom: 30px; padding-bottom: 1px; border-bottom: 1px solid var(--border-soft);
+  margin-bottom: 10px; padding-bottom: 0;
 }
 .work__title {
   font-family: 'Bebas Neue', sans-serif;
@@ -564,8 +564,7 @@ body.light .hero__slash-accent { opacity: 0.2; }
 .work__header {
   position: relative; z-index: 1;
   display: flex; align-items: flex-end; justify-content: space-between;
-  margin-bottom: 28px; padding-bottom: 16px;
-  border-bottom: 1px solid var(--border-soft);
+  margin-bottom: 10px; padding-bottom: 0;
 }
 
 /*  Pentagon carousel layout  */
@@ -708,41 +707,24 @@ body.light .hero__slash-accent { opacity: 0.2; }
 }
 
 /* ── View All Projects CTA ── */
-.view-all-wrap {
-  background: var(--bg);
-  display: flex;
-  justify-content: center;
-  padding: 0 64px 80px;
-  position: relative;
-  z-index: 1;
-}
 .view-all-btn {
   font-size: 15px;
   padding: 14px 48px;
-}
-@media (max-width: 767px) {
-  .view-all-wrap { padding: 0 24px 60px; }
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 /* ── Contact Section ── */
 .contact {
   position: relative;
   overflow: hidden;
-  background: var(--bg-alt);
+  background: var(--bg);
   border-top: 1px solid var(--border);
   padding: 100px 64px;
   transition: background 0.4s;
-}
-.contact__slash {
-  position: absolute; inset: 0; pointer-events: none;
-  background: var(--nav-layer-2); opacity: 0.18;
-  clip-path: polygon(44% 0, 100% 0, 100% 100%, 56% 100%);
-  transition: background 0.4s;
-}
-.contact__slash-accent {
-  position: absolute; inset: 0; pointer-events: none;
-  background: var(--accent-2); opacity: 0.05;
-  clip-path: polygon(42% 0, 46% 0, 54% 100%, 50% 100%);
 }
 .contact__inner {
   max-width: 1100px;
