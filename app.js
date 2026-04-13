@@ -70,12 +70,12 @@ themeToggles.forEach(btn => {
     const el = document.createElement('div');
     el.className = 'bubble';
 
-    const size     = 14 + Math.random() * 44;
+    const size     = 50 + Math.random() * 120;
     const x        = 2  + Math.random() * 96;
     const duration = 10 + Math.random() * 14;
     const delay    = Math.random() * 1.5;
     const color    = COLORS[Math.floor(Math.random() * COLORS.length)];
-    const opacity  = (0.12 + Math.random() * 0.18).toFixed(3);
+    const opacity  = (0.45 + Math.random() * 0.30).toFixed(3);
 
     el.style.cssText = `
       width: ${size}px;
@@ -95,11 +95,11 @@ themeToggles.forEach(btn => {
   for (let i = 0; i < 14; i++) {
     const el = document.createElement('div');
     el.className = 'bubble';
-    const size     = 14 + Math.random() * 44;
+    const size     = 50 + Math.random() * 120;
     const x        = 2  + Math.random() * 96;
     const duration = 10 + Math.random() * 14;
     const color    = COLORS[Math.floor(Math.random() * COLORS.length)];
-    const opacity  = (0.12 + Math.random() * 0.18).toFixed(3);
+    const opacity  = (0.45 + Math.random() * 0.30).toFixed(3);
     el.style.cssText = `
       width: ${size}px;
       height: ${size}px;
@@ -114,7 +114,7 @@ themeToggles.forEach(btn => {
     setTimeout(() => el.remove(), duration * 1000);
   }
 
-  setInterval(spawnBubble, 700);
+  setInterval(spawnBubble, 1100);
 })();
 
 // Pentagon work carousel
