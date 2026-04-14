@@ -2,8 +2,6 @@
 ## CPSC 581 Project - Elda Britu
 
 
-# First Stages
-
 ## The Button
 
 The first aspect of the portfolio came from one of the in-class activities that happened earlier in the semester, where we had to design some buttons which was going to be used for our Assignment 1. Among the three was one with a person's head peeking out and a little speech bubble. 
@@ -26,4 +24,16 @@ This would translate into the button that a first-time visitor could click on. T
 At first, it was
 
 I enjoy blue colors 
+
+### First Version
+![text](<sketches/Screenshot 2026-04-14 090043.png>) ![text](<sketches/Screenshot 2026-04-14 094335.png>)
+
+
+The main thing I was the most criticale about in this version 
+
+
+### Second Version
+
+This version I 
+
 
