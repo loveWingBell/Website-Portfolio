@@ -124,42 +124,47 @@ themeToggles.forEach(btn => {
     {
       num: '01',
       color: 'var(--accent)',
-      cat: 'Lorem ipsum · Dolor sit',
-      title: 'Lorem Ipsum<br>Dolor Amet',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      tags: ['Lorem', 'Ipsum', 'Dolor'],
+      cat: 'CPSC 581 Group Assignment 1',
+      title: 'Theatre Website Buttons',
+      desc: 'The first CPSC 581 assignemnt, which involved my groupmates and I creating buttons that reflect ourselves and how we work together as a team.',
+      tags: ['React', 'JavaScript', 'TyppeScript'],
+      link: 'https://github.com/loveWingBell/CPSC-581-Assignment-1-Group-8/tree/master',
     },
     {
       num: '02',
       color: 'var(--accent-2)',
-      cat: 'Consectetur · Adipiscing',
-      title: 'Consectetur<br>Adipiscing',
-      desc: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      tags: ['Sit', 'Amet', 'Elit'],
+      cat: 'CPSC 581 Group Assignment 2',
+      title: 'Marco Polo — Expertise Sharing System for Blender',
+      desc: 'A web app that allows users to send voice messages asking for help about a specific problem and for other users to respond through placing a mark that responds to "Marco-Polo."',
+      tags: ['Electron', 'JavaScript', 'Tensorflow'],
+      link: 'https://github.com/loveWingBell/CPSC-581-Assignment-2-Group-8',
     },
     {
       num: '03',
       color: 'var(--mint)',
-      cat: 'Eiusmod · Tempor',
-      title: 'Eiusmod<br>Tempor',
-      desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.',
-      tags: ['Eiusmod', 'Tempor', 'Labore'],
+      cat: 'CPSC 581 Group Assignment 3',
+      title: 'Meal Monitor - Racing Game',
+      desc: 'A web app that reads a force-sensitive resistor (FSR) on an Arduino Nano, streams 10-bit ADC values (0–1023) to the browser over WebSockets, and supports two-browser pairing',
+      tags: ['C++', 'Arduino', 'JavaScript'],
+      link: 'https://github.com/Hankyang777/CPSC581-Project3/tree/main/circular-pressure-sensor',
     },
     {
       num: '04',
       color: 'var(--accent)',
-      cat: 'Voluptate · Velit',
-      title: 'Voluptate<br>Velit Esse',
-      desc: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      tags: ['Velit', 'Esse', 'Fugiat'],
+      cat: 'Personal Project',
+      title: 'Viseme Agent',
+      desc: 'A visual avatar meant to be used in video calls, reacting to the user\'s voice and emotions in real time',
+      tags: ['JavaScript', 'Three.js', 'JavaScript'],
+      link: 'https://github.com/loveWingBell/James-AI-Visemes-Agent',
     },
     {
       num: '05',
       color: 'var(--accent-2)',
-      cat: 'Proident · Officia',
-      title: 'Proident<br>Officia Mollit',
-      desc: 'Sunt in culpa qui officia deserunt mollit anim id est laborum sed perspiciatis unde omnis iste natus error sit voluptatem.',
-      tags: ['Proident', 'Officia', 'Natus'],
+      cat: 'Personal Project',
+      title: 'PokeDisplayer',
+      desc: 'While currently blank, this intends to take the seed from a Generation 3/4 Pokemon game and display info about what could be caught and the probability',
+      tags: ['HTTP', 'Typescript', 'React'],
+      link: 'https://github.com/loveWingBell/PokeDisplayer',
     },
   ];
 
@@ -196,6 +201,7 @@ themeToggles.forEach(btn => {
   const fTitle   = document.getElementById('wfeatTitle');
   const fDesc    = document.getElementById('wfeatDesc');
   const fTags    = document.getElementById('wfeatTags');
+  const fLink    = document.querySelector('.wfeat__link');
 
   if (!dialSVG || !group) return;
 
@@ -278,6 +284,12 @@ themeToggles.forEach(btn => {
     fTitle.innerHTML       = w.title;
     fDesc.textContent      = w.desc;
     fTags.innerHTML        = w.tags.map(t => `<span class="tag">${t}</span>`).join('');
+    if (fLink) {
+      fLink.href = w.link || '#';
+      fLink.target = '_blank';
+      fLink.style.pointerEvents = w.link && w.link !== '#' ? '' : 'none';
+      fLink.style.opacity       = w.link && w.link !== '#' ? '1' : '0.4';
+    }
   }
 
   // Initialise
