@@ -38,13 +38,15 @@ Admittedly, I completely forgot about the initial ideas in this brainstorming ph
 
 ![alt text](<sketches/Screenshot 2026-04-14 210859.png>)
 
-With this as a basis, I created what would be the first iteration of the website, with all of the text sections replaced with "lorem ipsum" placeholders. What isn't pictured below 
+With this as a basis, I created what would be the first iteration of the website, with all of the text sections replaced with "lorem ipsum" placeholders. What isn't pictured below is how the text scrolls and the how the circle slowly spins. As I mentioned before, I enjoy sprinkling in eye-candy to track and look like, even if they don't serve a practical purpose.
 
 ![text](<sketches/Screenshot 2026-04-14 090043.png>) ![text](<sketches/Screenshot 2026-04-14 094335.png>)
 
 ### Second Version
  
-I don't have a screenshot of the second version, but it was here that the first section was reduced to the "Welcome to my Portfolio" title. Mostly because I could not come up with much to say
+I don't have a screenshot of the second version, but it was here that the first section was reduced to the "Welcome to my Portfolio" title. Mostly because I could not come up with much to say, but also becuase I wanted the visual presentation to have equal footing with the reading material, if not more of a footing. Having more to read would just take away from that.
+
+It was also here that I opted to add shapes that rotate in the direction the user scrolls through the website, partially inspired by one of the websites that was visited during the Group Assignment 1 tutorial era. 
 
 
 ## Third Version
