@@ -1,9 +1,9 @@
 # Website-Portfolio
 ## CPSC 581 Project - Elda Britu
 
-**DO NOT PAY ATTENTION TO ANY COMMITS AFTER **
+**DO NOT PAY ATTENTION TO ANY CODE COMMITS AFTER THE DUE DATE/TIME, THAT IS FOR PERSONAL USE.** The version that should be evaulated has been submitted as a ZIP file in the dropbox.
 
-Since I admittedly have not done much commits, this will compile the sketches/inspirations that contributed to teh website
+Since I admittedly have not done much commits, this will compile the sketches/inspirations that contributed to the website.
 
 
 ## The Button
@@ -34,17 +34,13 @@ I enjoy mostly bright colors with a preference to blues, and I enjoy having alot
 
 ### First Version
 
-Admittedly, I completely forgot about the initial ideas in this brainstorming phase and took to Pinterest to find some inspiration. My main goal was to find something that was visually intriguing that I could use as a base and envision moving elements to be added to the live version. Eventually, I cam across this image.
+Admittedly, I completely forgot about the initial ideas in this brainstorming phase and took to Pinterest to find some inspiration. My main goal was to find something that was visually intriguing that I could use as a base and envision moving elements to be added to the live version. Eventually, I came across this image.
 
+![alt text](<sketches/Screenshot 2026-04-14 210859.png>)
 
-
-With this in mind, I created what would be the first iteration of the website.
+With this as a basis, I created what would be the first iteration of the website, with all of the text sections replaced with "lorem ipsum" placeholders. What isn't pictured below 
 
 ![text](<sketches/Screenshot 2026-04-14 090043.png>) ![text](<sketches/Screenshot 2026-04-14 094335.png>)
-
-
-The main thing I was the most critical about in this version 
-
 
 ### Second Version
  
@@ -57,4 +53,4 @@ It was here that I was beginning to hate the look of the shapes. I'm sure I coul
 
 ![alt text](<sketches/scrap sketches.jpg>)
 
-However, I did enjoy the moving shape idea, so I decided to retain it through having a moving shape be rotated to go through some of the highlighted projects.
+However, I did enjoy the moving shape idea, so I decided to retain it through having a moving shape be rotated to go through some of the highlighted projects to add some interactivity that can both be used as a mini-navigator and something fun to meddle with.
