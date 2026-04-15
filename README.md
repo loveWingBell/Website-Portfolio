@@ -3,16 +3,15 @@
 
 **DO NOT PAY ATTENTION TO ANY CODE COMMITS AFTER THE DUE DATE/TIME, THAT IS FOR PERSONAL USE.** The version that should be evaulated has been submitted as a ZIP file in the dropbox.
 
-Since I admittedly have not done much commits, this will compile the sketches/inspirations that contributed to the website.
-
+Since I admittedly have not done much commits, this will compile the sketches/inspirations that contributed to the website. All of the images minus the explanations are in the `sketches` folder and is not part of the website.
 
 ## The Button
 
-The first aspect of the portfolio came from one of the in-class activities that happened earlier in the semester, where we had to design some buttons which was going to be used for our Assignment 1. Among the three was one with a person's head peeking out and a little speech bubble. 
+The first aspect of the portfolio came from one of the in-class activities that happened earlier in the semester, where we had to design some buttons which was going to be used for our Assignment 1. Among the three was one with a person's head peeking out and a little speech bubble. It was a simple concept, but something about it felt alive in a way the other two didn't quite manage.
 
 ![alt text](<sketches/in-class activity buttons.png>)
 
-This small idea was intentionally meant to be further implemented in Assignment 1, once our final group was formed. As shown in the image below, the figure in the bottom right would be a person that you could click on, in which applause would occur on screen.
+This small idea was intentionally meant to be further implemented in Assignment 1, once our final group was formed. As shown in the image below, the figure in the bottom right would be a person that you could click on, in which applause would occur on screen. The idea of having something that reacted to you, that acknowledged your presence on the page, was something I wanted to hold onto from the very beginning.
 
 ![alt text](<sketches/a1 iteration.png>)
 
@@ -20,7 +19,7 @@ However, in the final iteration, most of the button design was gone. However, wh
 
 ![alt text](<sketches/a1 elda button.gif>)
 
-This would translate into the button that a first-time visitor could click on. This would remain the one constant of the website that didn't change.
+That sense of reward for interacting with the page; small, silly, but satisfyin; was something I didn't want to lose. This would translate into the button that a first-time visitor could click on. This would remain the one constant of the website that didn't change, no matter how many times everything else around it was reworked.
 
 
 ## The Website
@@ -30,29 +29,29 @@ This would translate into the button that a first-time visitor could click on. T
 The first "iteration" of the website came from the in-class activity during the second lecture, where we were asked to come up with samples of what our portfolio could look like.
 ![alt text](<sketches/L02 In-Class Activity Part 2.jpg>)
 
-I enjoy mostly bright colors with a preference to blues, and I enjoy having alot of interactive elements in what I'm trying to create, even if it some of them might not be necessary. Resemblant to a visual stim toy, if that makes sense. That was why I envisioned having many parts of the site that slides to and fro just to give someone's fingers something to do. The typeface, I did not really think much about. Though, the idea of having something that pops and looks "edgy" but still corporate enough to fit a portfolio was kept in mind for the title font.
+I enjoy mostly bright colors with a preference to blues, and I enjoy having a lot of interactive elements in what I'm trying to create, even if some of them might not be necessary. Resemblant to a visual stim toy, if that makes sense. There's something satisfying about a page that has things happening on it — things to drag, things to hover over, things that respond to you just scrolling through. That was why I envisioned having many parts of the site that slides to and fro just to give someone's fingers something to do. The typeface, I did not really think much about at this stage. Though, the idea of having something that pops and looks "edgy" but still corporate enough to fit a portfolio was kept in mind for the title font.
 
 ### First Version
 
-Admittedly, I completely forgot about the initial ideas in this brainstorming phase and took to Pinterest to find some inspiration. My main goal was to find something that was visually intriguing that I could use as a base and envision moving elements to be added to the live version. Eventually, I came across this image.
+Admittedly, I completely forgot about the initial ideas in this brainstorming phase and took to Pinterest to find some inspiration. My main goal was to find something that was visually intriguing that I could use as a base and envision moving elements to be added to the live version. I wasn't looking for something to copy so much as something that could give me a feeling, a mood to chase. Eventually, I came across this image.
 
 ![alt text](<sketches/Screenshot 2026-04-14 210859.png>)
 
-With this as a basis, I created what would be the first iteration of the website, with all of the text sections replaced with "lorem ipsum" placeholders. What isn't pictured below is how the text scrolls and the how the circle slowly spins. As I mentioned before, I enjoy sprinkling in eye-candy to track and look like, even if they don't serve a practical purpose.
+With this as a basis, I created what would be the first iteration of the website, with all of the text sections replaced with "lorem ipsum" placeholders. What isn't pictured below is how the text scrolls and how the circle slowly spins. As I mentioned before, I enjoy sprinkling in eye-candy to track and look at, even if they don't serve a practical purpose. Sometimes a thing can just be nice to watch, and that feels like reason enough.
 
 ![text](<sketches/Screenshot 2026-04-14 090043.png>) ![text](<sketches/Screenshot 2026-04-14 094335.png>)
 
 ### Second Version
  
-I don't have a screenshot of the second version, but it was here that the first section was reduced to the "Welcome to my Portfolio" title. Mostly because I could not come up with much to say, but also becuase I wanted the visual presentation to have equal footing with the reading material, if not more of a footing. Having more to read would just take away from that.
+I don't have a screenshot of the second version, but it was here that the first section was reduced to just the "Welcome to my Portfolio" title. Mostly because I could not come up with much to say, but also because I wanted the visual presentation to have equal footing with the reading material, if not more of a footing. A portfolio, at least to me, should be felt before it's read. Having more text up front would just pull focus away from that first impression.
 
-It was also here that I opted to add shapes that rotate in the direction the user scrolls through the website, partially inspired by one of the websites that was visited during the Group Assignment 1 tutorial era. 
+It was also here that I opted to add shapes that rotate in the direction the user scrolls through the website, partially inspired by one of the websites that was visited during the Group Assignment 1 tutorial era. It felt like a natural way to make the act of scrolling feel a little more intentional, a little more like something was happening because of you.
 
 
-## Third Version
+### Third Version
 
-It was here that I was beginning to hate the look of the shapes. I'm sure I could have arranged them in a way that made it appear less cluttered, but between the placement and the colors, it made the first section look a bit more dull. So instead, I decided to add bubbles instead, and have the colors of it match the pastel confetti to add a bit more contrast to the background colors (especially during dark mode). As shown in the smaller image of this scrap design page, this was what I intially imagined the bubbles to look like.
+It was here that I was beginning to hate the look of the shapes. I'm sure I could have arranged them in a way that made it appear less cluttered, but between the placement and the colors, it made the first section look a bit more dull than I wanted; almost like visual noise rather than visual interest. So instead, I decided to add bubbles instead, and have the colors match the pastel confetti to add a bit more contrast to the background colors (especially during dark mode). As shown in the smaller image of this scrap design page, this was what I initially imagined the bubbles to look like.
 
 ![alt text](<sketches/scrap sketches.jpg>)
 
-However, I did enjoy the moving shape idea, so I decided to retain it through having a moving shape be rotated to go through some of the highlighted projects to add some interactivity that can both be used as a mini-navigator and something fun to meddle with.
+However, I did enjoy the moving shape idea, so I decided to retain it through having a moving shape be rotated to go through some of the highlighted projects to add some interactivity that can both be used as a mini-navigator and something fun to meddle with. It felt like a good compromise. In my eyes, it maintained the the energy of the original idea without letting it overwhelm the rest of the page.
