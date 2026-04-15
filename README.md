@@ -21,19 +21,27 @@ This would translate into the button that a first-time visitor could click on. T
 
 ## The Website
 
-At first, it was
+### The Brainstorming Phase
 
-I enjoy blue colors 
+The first "iteration" of the website came from the in-class activity during the second lecture, where we were asked to come up with samples of what our portfolio could look like.
+![alt text](<sketches/L02 In-Class Activity Part 2.jpg>)
+
+I enjoy mostly bright colors with a preference to blues. 
 
 ### First Version
+
+Admittedly, I completely forgot about this initial sketch 
+
+With 
+
 ![text](<sketches/Screenshot 2026-04-14 090043.png>) ![text](<sketches/Screenshot 2026-04-14 094335.png>)
 
 
-The main thing I was the most criticale about in this version 
+The main thing I was the most critical about in this version 
 
 
 ### Second Version
-
-This version I 
+ 
+I don't have a screenshot of the second version, but it was here that the first section was reduced to the "weclome "
 
 
